@@ -10,5 +10,6 @@ Supported languages include:
 
 Future supported languages include:
 
-1. Arabic
+1. Modern Arabic
 2. Japanese
+3. Mandarin Chinese
