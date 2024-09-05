@@ -36,7 +36,7 @@ setup(
     packages=["gricean_pragmatics"],
     install_requires=required,
     url="",
-    license="MIT",
+    license="Apache",
     scripts=[
         os.path.join("bin", "gp-rest-api"),
         os.path.join("bin", "gp-ui"),
