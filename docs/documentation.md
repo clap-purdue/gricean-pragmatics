@@ -3,15 +3,14 @@
 ## Naturalness:
 
 Naturalness Metric Explanation:
-utterance_surprisal: The surprisal score for the given utterance.
-interpretation_a_surprisal: The surprisal score for interpretation (a) ("He is very smart").
-interpretation_b_surprisal: The surprisal score for interpretation (b) ("He is not smart at all").
+- utterance_surprisal: The surprisal score for the given utterance.
+- interpretation_a_surprisal: The surprisal score for interpretation (a) ("He is very smart").
+- interpretation_b_surprisal: The surprisal score for interpretation (b) ("He is not smart at all").
 The function calculates the absolute difference in surprisal scores between the utterance and each interpretation.
 The output dictionary contains:
-difference_a: The difference between the utterance and interpretation (a).
-difference_b: The difference between the utterance and interpretation (b).
-preferred_interpretation: The interpretation with the smaller surprisal difference, 
-indicating the LLM’s preferred implied meaning.
+- difference_a: The difference between the utterance and interpretation (a).
+- difference_b: The difference between the utterance and interpretation (b).
+- preferred_interpretation: The interpretation with the smaller surprisal difference, indicating the LLM’s preferred implied meaning.
 This function allows us to evaluate whether the LLMs show pragmatic sensitivity by comparing surprisal scores.
 
 
@@ -57,12 +56,10 @@ This approach allows us to systematically evaluate how well LLMs follow complex 
 ## Implicature Recovery Rate (IRR):
 
 IRR metric Explanation:
-Explanation:
-successful_recoveries: The number of implicature errors that were successfully recovered by the LLM after introducing noise or ambiguity.
-total_errors: The total number of implicature errors introduced during the evaluation.
+- successful_recoveries: The number of implicature errors that were successfully recovered by the LLM after introducing noise or ambiguity.
+- total_errors: The total number of implicature errors introduced during the evaluation.
 The function calculates the IRR as the ratio of successful_recoveries to total_errors.
-The output is a floating-point number representing the IRR, 
-which can be interpreted as a percentage (e.g., 0.60 means 60% of implicatures were successfully recovered).
+The output is a floating-point number representing the IRR, which can be interpreted as a percentage (e.g., 0.60 means 60% of implicatures were successfully recovered).
 This function allows us to 
 evaluate the robustness of LLMs in handling and resolving implicature-related ambiguities 
 by measuring how well they can recover from initial errors.
@@ -71,9 +68,8 @@ by measuring how well they can recover from initial errors.
 ## Pragmatic Sensitivity Index (PSI):
 
 PSI metric Explanation:
-original_accuracy: The accuracy of the LLM's responses when provided with the original context.
-changed_accuracy: The accuracy of the LLM's responses after subtle contextual changes, 
-such as scrambling nouns or replacing key words with nonsense words.
+- original_accuracy: The accuracy of the LLM's responses when provided with the original context.
+- changed_accuracy: The accuracy of the LLM's responses after subtle contextual changes, such as scrambling nouns or replacing key words with nonsense words.
 The function calculates the PSI as the difference between original_accuracy and changed_accuracy.
 A higher PSI indicates greater sensitivity to contextual changes, 
 meaning the model's performance drops more when the context is altered.
