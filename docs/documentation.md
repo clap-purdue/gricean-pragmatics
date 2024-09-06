@@ -1,8 +1,9 @@
-**The `gricean_pragmatics` project includes several scripts, algorithms, and metrics to evaluating LLMs’ pragmatic competence in multilingual settings **
+The `gricean_pragmatics` project includes several scripts, algorithms, and metrics to evaluating LLMs’ pragmatic competence in multilingual settings
 
 ## Naturalness:
 
 Naturalness Metric Explanation:
+
 1. utterance_surprisal: The surprisal score for the given utterance.
 2. interpretation_a_surprisal: The surprisal score for interpretation (a) ("He is very smart").
 3. interpretation_b_surprisal: The surprisal score for interpretation (b) ("He is not smart at all").
@@ -20,6 +21,7 @@ This function allows us to evaluate whether the LLMs show pragmatic sensitivity 
 ## Sensitivity to different Shades of Meaning (SSM):
 
 SSM metric Explanation:
+
 1. embedding_a: The embedding for the first sentence (e.g., "Alex was not unaware of the issue").
 2. embedding_b: The embedding for the second sentence (e.g., "Alex was slightly aware of the issue").
 3. embedding_c: The embedding for the third sentence (e.g., "Alex was aware of the issue").
@@ -83,6 +85,7 @@ by measuring how well they can recover from initial errors.
 ## Pragmatic Sensitivity Index (PSI):
 
 PSI metric Explanation:
+
 - original_accuracy: The accuracy of the LLM's responses when provided with the original context.
   
 - changed_accuracy: The accuracy of the LLM's responses after subtle contextual changes, such as scrambling nouns or replacing key words with nonsense words.
