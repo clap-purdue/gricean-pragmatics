@@ -11,6 +11,7 @@ Naturalness Metric Explanation:
 The function calculates the absolute difference in surprisal scores between the utterance and each interpretation.
 
 The output dictionary contains:
+
 1. difference_a: The difference between the utterance and interpretation (a).
 2. difference_b: The difference between the utterance and interpretation (b).
 3. preferred_interpretation: The interpretation with the smaller surprisal difference, indicating the LLM’s preferred implied meaning.
@@ -27,12 +28,14 @@ SSM metric Explanation:
 3. embedding_c: The embedding for the third sentence (e.g., "Alex was aware of the issue").
 
 The function computes cosine similarities between sentence pairs:
+
 1. similarity_ab: Similarity between sentence A and B.
 2. similarity_bc: Similarity between sentence B and C.
    
-- The function then ranks these similarities in descending order.
+The function then ranks these similarities in descending order.
   
-- The output dictionary contains:
+The output dictionary contains:
+
   1. similarity_ab: Cosine similarity between sentence A and B.
   2. similarity_bc: Cosine similarity between sentence B and C.
   3. ranking: The ranked list of similarities, indicating which sentence pair is more similar.
@@ -69,6 +72,7 @@ This approach allows us to systematically evaluate how well LLMs follow complex 
 ## Implicature Recovery Rate (IRR):
 
 IRR metric Explanation:
+
 - successful_recoveries: The number of implicature errors that were successfully recovered by the LLM after introducing noise or ambiguity.
   
 - total_errors: The total number of implicature errors introduced during the evaluation.
