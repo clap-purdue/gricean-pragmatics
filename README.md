@@ -7,3 +7,5 @@ A library of five metrics evaluating large language models' pragmatic competence
 3. **Pragmatic Reasoning Chains (PRC)**
 4. **Implicature Recovery Rate (IRR)**
 5. **Pragmatic Sensitivity Index (PSI)**
+
+Benchmark datasets (work-in-progress), examples, and documentation are also provided.
